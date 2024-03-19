@@ -8,17 +8,16 @@ package com.goolag.pif;
 import android.os.Bundle;
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
-import com.android.settingslib.widget.R;
 
 public class PifActivity extends CollapsingToolbarBaseActivity {
 
-    private static final String TAG = "Pif";
+    private static final String TAG = "PifActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.content_frame,
+        getSupportFragmentManager().beginTransaction().replace(com.android.settingslib.collapsingtoolbar.R.id.content_frame,
                 new Pif(), TAG).commit();
     }
 }
