@@ -24,17 +24,19 @@ public class Pif extends PreferenceFragmentCompat
 
     private TopIntroPreference mIntroPreference;
 
-    private Preference mProductPreference;
-    private Preference mDevicePreference;
     private Preference mManufacturerPreference;
-    private Preference mBrandPreference;
     private Preference mModelPreference;
     private Preference mFingerprintPreference;
-    private Preference mSecurityPatchPreference;
-    private Preference mFirstAPILevelPreference;
+    private Preference mBrandPreference;
+    private Preference mProductPreference;
+    private Preference mDevicePreference;
+    private Preference mReleasePreference;
     private Preference mIDPreference;
+    private Preference mIncrementalPreference;
     private Preference mTypePreference;
     private Preference mTAGSPreference;
+    private Preference mSecurityPatchPreference;
+    private Preference mDeviceInitialSdkIntPreference;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -49,33 +51,37 @@ public class Pif extends PreferenceFragmentCompat
 
         mIntroPreference = findPreference("device_intro");
 
-        mProductPreference = findPreference("product");
-        mDevicePreference = findPreference("device");
         mManufacturerPreference = findPreference("manufacturer");
-        mBrandPreference = findPreference("brand");
         mModelPreference = findPreference("model");
         mFingerprintPreference = findPreference("fingerprint");
-        mSecurityPatchPreference = findPreference("security_patch");
-        mFirstAPILevelPreference = findPreference("first_api_level");
+        mBrandPreference = findPreference("brand");
+        mProductPreference = findPreference("product");
+        mDevicePreference = findPreference("device");
+        mReleasePreference = findPreference("release");
         mIDPreference = findPreference("id");
+        mIncrementalPreference = findPreference("incremental");
         mTypePreference = findPreference("type");
         mTAGSPreference = findPreference("tags");
+        mSecurityPatchPreference = findPreference("security_patch");
+        mDeviceInitialSdkIntPreference = findPreference("device_initial_sdk_int");
 
         mIntroPreference.setTitle(Build.MANUFACTURER + " " + Build.MODEL);
 
-        mProductPreference.setSummary(selectedDeviceProps[0]);
-        mDevicePreference.setSummary(selectedDeviceProps[1].isEmpty() ?
-                PixelPropsUtils.getDeviceName(selectedDeviceProps[5]) : selectedDeviceProps[1]);
-        mManufacturerPreference.setSummary(selectedDeviceProps[2]);
+        mManufacturerPreference.setSummary(selectedDeviceProps[0]);
+        mModelPreference.setSummary(selectedDeviceProps[1]);
+        mFingerprintPreference.setSummary(selectedDeviceProps[2]);
         mBrandPreference.setSummary(selectedDeviceProps[3]);
-        mModelPreference.setSummary(selectedDeviceProps[4]);
-        mFingerprintPreference.setSummary(selectedDeviceProps[5]);
-        mSecurityPatchPreference.setSummary(selectedDeviceProps[6]);
-        mFirstAPILevelPreference.setSummary(selectedDeviceProps[7]);
-        mIDPreference.setSummary(selectedDeviceProps[8].isEmpty() ?
-                PixelPropsUtils.getBuildID(selectedDeviceProps[5]) : selectedDeviceProps[8]);
+        mProductPreference.setSummary(selectedDeviceProps[4]);
+        mDevicePreference.setSummary(selectedDeviceProps[5].isEmpty() ?
+                PixelPropsUtils.getDeviceName(selectedDeviceProps[2]) : selectedDeviceProps[5]);
+        mReleasePreference.setSummary(selectedDeviceProps[6]);
+        mIDPreference.setSummary(selectedDeviceProps[7].isEmpty() ?
+                PixelPropsUtils.getBuildID(selectedDeviceProps[5]) : selectedDeviceProps[7]);
+        mIncrementalPreference.setSummary(selectedDeviceProps[8]);
         mTypePreference.setSummary(selectedDeviceProps[9].isEmpty() ? "user" : selectedDeviceProps[9]);
         mTAGSPreference.setSummary(selectedDeviceProps[10].isEmpty() ? "release-keys" : selectedDeviceProps[10]);
+        mSecurityPatchPreference.setSummary(selectedDeviceProps[11]);
+        mDeviceInitialSdkIntPreference.setSummary(selectedDeviceProps[12]);
     }
 
     @Override

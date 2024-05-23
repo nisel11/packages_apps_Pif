@@ -4,29 +4,14 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:settings="http://schemas.android.com/apk/res/com.goolag.pif">
+    xmlns:settings="http://schemas.android.com/apk/res/com.goolag.pif">
 
     <com.android.settingslib.widget.TopIntroPreference
         android:key="device_intro"/>
 
     <Preference
-        android:key="product"
-        android:title="@string/product_title"
-        android:selectable="false" />
-
-    <Preference
-        android:key="device"
-        android:title="@string/device_title"
-        android:selectable="false" />
-
-    <Preference
         android:key="manufacturer"
         android:title="@string/manufacturer_title"
-        android:selectable="false" />
-
-    <Preference
-        android:key="brand"
-        android:title="@string/brand_title"
         android:selectable="false" />
 
     <Preference
@@ -40,18 +25,33 @@
         android:selectable="false" />
 
     <Preference
-        android:key="security_patch"
-        android:title="@string/security_patch_title"
+        android:key="brand"
+        android:title="@string/brand_title"
         android:selectable="false" />
 
     <Preference
-        android:key="first_api_level"
-        android:title="@string/first_api_level_title"
+        android:key="product"
+        android:title="@string/product_title"
+        android:selectable="false" />
+
+    <Preference
+        android:key="device"
+        android:title="@string/device_title"
+        android:selectable="false" />
+
+    <Preference
+        android:key="release"
+        android:title="@string/release_title"
         android:selectable="false" />
 
     <Preference
         android:key="id"
         android:title="@string/id_title"
+        android:selectable="false" />
+
+    <Preference
+        android:key="incremental"
+        android:title="@string/incremental_title"
         android:selectable="false" />
 
     <Preference
@@ -62,5 +62,15 @@
     <Preference
         android:key="tags"
         android:title="@string/tags_title"
+        android:selectable="false" />
+
+    <Preference
+        android:key="security_patch"
+        android:title="@string/security_patch_title"
+        android:selectable="false" />
+
+    <Preference
+        android:key="device_initial_sdk_int"
+        android:title="@string/device_initial_sdk_int_title"
         android:selectable="false" />
 </PreferenceScreen>

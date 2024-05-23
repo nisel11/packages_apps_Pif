@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2023 The Evolution X Project
+     Copyright (C) 2023-2024 The Evolution X Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
@@ -12,17 +12,19 @@
 
     <!-- Device 1 -->
     <string-array name="device_1" translatable="false">
-        <item></item> <!-- PRODUCT -->
-        <item></item> <!-- DEVICE -->
         <item></item> <!-- MANUFACTURER -->
-        <item></item> <!-- BRAND -->
         <item></item> <!-- MODEL -->
         <item></item> <!-- FINGERPRINT -->
-        <item></item> <!-- SECURITY_PATCH -->
-        <item></item> <!-- FIRST_API_LEVEL -->
+        <item></item> <!-- BRAND -->
+        <item></item> <!-- PRODUCT -->
+        <item></item> <!-- DEVICE -->
+        <item></item> <!-- RELEASE -->
         <item></item> <!-- ID -->
+        <item></item> <!-- INCREMENTAL -->
         <item></item> <!-- TYPE -->
         <item></item> <!-- TAGS -->
+        <item></item> <!-- SECURITY_PATCH -->
+        <item></item> <!-- DEVICE_INITIAL_SDK_INT -->
     </string-array>
 
 </resources>
