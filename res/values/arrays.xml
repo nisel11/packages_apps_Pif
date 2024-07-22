@@ -12,18 +12,18 @@
 
     <!-- Device 1 -->
     <string-array name="device_1" translatable="false">
-        <item></item> <!-- MANUFACTURER -->
-        <item></item> <!-- MODEL -->
-        <item></item> <!-- FINGERPRINT -->
-        <item></item> <!-- BRAND -->
-        <item></item> <!-- PRODUCT -->
-        <item></item> <!-- DEVICE -->
+        <item>Google</item> <!-- MANUFACTURER -->
+        <item>Pixel 8 Pro</item> <!-- MODEL -->
+        <item>google/husky_beta/husky:15/AP31.240517.022/11948202:user/release-keys</item> <!-- FINGERPRINT -->
+        <item>google</item> <!-- BRAND -->
+        <item>husky_beta</item> <!-- PRODUCT -->
+        <item>husky</item> <!-- DEVICE -->
         <item></item> <!-- RELEASE -->
-        <item></item> <!-- ID -->
+        <item>AP31.240517.022</item> <!-- ID -->
         <item></item> <!-- INCREMENTAL -->
         <item></item> <!-- TYPE -->
         <item></item> <!-- TAGS -->
-        <item></item> <!-- SECURITY_PATCH -->
+        <item>2024-06-05</item> <!-- SECURITY_PATCH -->
         <item></item> <!-- DEVICE_INITIAL_SDK_INT -->
     </string-array>
 
