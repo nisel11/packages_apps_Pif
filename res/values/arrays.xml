@@ -14,17 +14,17 @@
     <string-array name="device_1" translatable="false">
         <item>Google</item> <!-- MANUFACTURER -->
         <item>Pixel 8 Pro</item> <!-- MODEL -->
-        <item>google/husky_beta/husky:15/AP31.240517.022/11948202:user/release-keys</item> <!-- FINGERPRINT -->
+        <item>google/husky_beta/husky:15/AP31.240617.015/12207491:user/release-keys</item> <!-- FINGERPRINT -->
         <item>google</item> <!-- BRAND -->
         <item>husky_beta</item> <!-- PRODUCT -->
         <item>husky</item> <!-- DEVICE -->
-        <item></item> <!-- RELEASE -->
-        <item>AP31.240517.022</item> <!-- ID -->
-        <item></item> <!-- INCREMENTAL -->
-        <item></item> <!-- TYPE -->
-        <item></item> <!-- TAGS -->
-        <item>2024-06-05</item> <!-- SECURITY_PATCH -->
-        <item></item> <!-- DEVICE_INITIAL_SDK_INT -->
+        <item>15</item> <!-- RELEASE -->
+        <item>AP31.240617.015</item> <!-- ID -->
+        <item>12207491</item> <!-- INCREMENTAL -->
+        <item>user</item> <!-- TYPE -->
+        <item>release-keys</item> <!-- TAGS -->
+        <item>2024-08-05</item> <!-- SECURITY_PATCH -->
+        <item>34</item> <!-- DEVICE_INITIAL_SDK_INT -->
     </string-array>
 
 </resources>
