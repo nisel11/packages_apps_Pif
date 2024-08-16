@@ -13,11 +13,11 @@
     <!-- Device 1 -->
     <string-array name="device_1" translatable="false">
         <item>Google</item> <!-- MANUFACTURER -->
-        <item>Pixel 8 Pro</item> <!-- MODEL -->
-        <item>google/husky_beta/husky:15/AP31.240617.015/12207491:user/release-keys</item> <!-- FINGERPRINT -->
+        <item>Pixel 8a</item> <!-- MODEL -->
+        <item>google/akita_beta/akita:15/AP31.240617.015/12207491:user/release-keys</item> <!-- FINGERPRINT -->
         <item>google</item> <!-- BRAND -->
-        <item>husky_beta</item> <!-- PRODUCT -->
-        <item>husky</item> <!-- DEVICE -->
+        <item>akita_beta</item> <!-- PRODUCT -->
+        <item>akita</item> <!-- DEVICE -->
         <item>15</item> <!-- RELEASE -->
         <item>AP31.240617.015</item> <!-- ID -->
         <item>12207491</item> <!-- INCREMENTAL -->
